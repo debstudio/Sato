@@ -1,0 +1,163 @@
+{	"extensionName": "Sato",
+	"description": "Robot Sato",
+	"version": "1.2",
+	"sort":0,
+	"author": "DebStudio",
+	"homepage": "https://github.com/debstudio/Sato",
+	"extensionPort": 0,
+	"firmware":"1.1.103",
+	"javascriptURL":"js/Sato.js",
+	"blockSpecs": [
+		["h","Programa  Sato","runArduinoSato",{"src":"","inc":"#include \"Sato.h\"","def":"","setup":"","loop":""}],
+		["-"],
+		
+		["w", "mover %m.direccion a velocidad %d.motorvalueSato","mueveSato", "ADELANTE", 0,
+		{"encode":"{d0}{s1}","setup":"iniMotor();\n","inc":"","def":"","work":"move({0},{1});\n","loop":""}],		
+		["w", "establecer motor %d.motorPortSato a velocidad %d.motorvalueSato","mueveMotorSato", "IZQUIERDO", 0,
+		{"encode":"{d0}{s1}","setup":"iniMotor();\n","inc":"","def":"","work":"establecerVelocidad(pinMotor{0},{1});\n","loop":""}],
+		["w", "mover cabeza %d.gradosservoSato grados","mueveCabezaSato",90,
+		{"encode":"{d0}{s1}","setup":"iniServo();\n","inc":"","def":"","work":"posicionaServo({0});\n","loop":"servoLoop();\n"}],
+		["-"],
+		["w", "luz %d.nluces rojo %d.lrojo verde %d.lverde azul %d.lazul brillo %d.lbrillo","luzSato","TODAS",0,0,0,100,
+		{"encode":"{d0}","setup":"establecerLuz(0,0,0,0,0);\n","inc":"","def":"","work":"establecerLuz({0},{1},{2},{3},{4});\n","loop":""}],
+
+		["w", "tocar tono nota %d.notasSato tiempo %d.tiempoTonoSato","runToneSato","C4","Half",
+		{"encode":"{s1}{s2}","setup":"pinMode(PIN_BUZZER,OUTPUT);\n","inc":"","def":"","work":"tocarNota({0},{1});\n","loop":""}],
+		["w", "tono frecuencia desde %d.iniFrecuencia hasta %d.finFrecuencia proporción %d.proporcion duracion %d.duracion silencio %d.silencio","runToneCurvoSato",800,2093,1.02,18,1,
+		{"encode":"{s1}{s2}","setup":"pinMode(PIN_BUZZER,OUTPUT);\n","inc":"","def":"","work":"tonoCurvo({0},{1},{2},{3},{4});\n","loop":""}],
+		["-"],
+		["R", "distancia del sensor ultrasónico ","getDistanciaSensorSato",
+		{"encode":"{d0}","setup":"","inc":"","def":"","work":"obtieneDistancia(PIN_TRIGGER,PIN_ECHO)","loop":""}],	
+
+		["R", "sensor de luz","sLuzSato",
+		{"encode":"{d0}","setup":"pinMode(PIN_LDR,INPUT);\n","inc":"","def":"","work":"analogRead(PIN_LDR)","loop":""}],
+		["R", "sigue lineas","sigueLineasSato",
+		{"encode":"{d0}","setup":"pinMode(PIN_SIG_IZQ,INPUT);\npinMode(PIN_SIG_DER,INPUT);\n","inc":"","def":"","work":"leerSigueLinea()","loop":""}],
+		
+		["B", "sigue lineas %d.siguelinea es %d.blanconegro","sigueLineasEstadoSato", "IZQUIERDO", "NEGRO", 
+		{"encode":"{d0}{d1}{d2}","setup":"pinMode(PIN_SIG_IZQ,INPUT);\npinMode(PIN_SIG_DER,INPUT);\n","inc":"","def":"","work":"(true&&({1}?(leerSigueLinea()&{0}):!(leerSigueLinea()&{0})))","loop":""}],
+		["-"],
+		["B", "botón %m.button_state","botonSato","PRESIONADO",
+		{"encode":"{d0}","setup":"pinMode(PIN_PULSADOR,INPUT);\n","inc":"","def":"","work":"({0}^(analogRead(PIN_PULSADOR)>1000?0:1))","loop":""}],
+		["B","control infrarojo %m.ircodeSato","irSatoPresionado","1",
+		{"encode":"{n0}{d0}","setup":"iniIR();\n","inc":"","def":"","work":"irBotonPresionado().equals(String({0}))","loop":"irLoop();\n"}],
+		["-","Puerto Serie y Bluetooth"],
+		[
+			"b",
+			"¿datos disponibles del puerto serie?",
+			"isSerieDisponibleSato",
+			{
+				"setup":"serieInicializa();\n",
+				"inc":"",
+				"def":"",
+				"work":"serieDatosDisponibles()",
+				"loop":""
+			}
+		],
+		[
+			"b",
+			"letra puerto serie igual a %s",
+			"isSerieLetraSato","A",
+			{
+				"setup":"serieInicializa();\n",
+				"inc":"",
+				"def":"",
+				"work":"String(serieCaracter()).equals({0})",
+				"loop":""
+			}
+		],
+		[
+			"R",
+			"valor junto a la letra",
+			"serieValSato",
+			{
+				"setup":"",
+				"inc":"",
+				"def":"",
+				"work":"serieValorCodigo()",
+				"loop":""
+			}
+		],
+		[
+			"R",
+			"letra puerto serie",
+			"serieCharSato",
+			{
+				"setup":"serieInicializa();\n",
+				"inc":"",
+				"def":"",
+				"work":"serieCaracter()",
+				"loop":""
+			}
+		],
+		[
+			"R",
+			"número puerto serie",
+			"serieNumSato",
+			{
+				"setup":"serieInicializa();\n",
+				"inc":"",
+				"def":"",
+				"work":"serieNumero()",
+				"loop":""
+			}
+		],
+
+		["w", "escribir en el puerto serie el texto %s", "serieWriteSato", "Hola",
+		{"setup":"serieInicializa();\n","inc":"","def":"","work":"seriePrint(String({0}));\n","loop":""}],		
+		["w", "escribir en el puerto serie una línea con texto %s", "seriePrintSato", "Hola",
+		{"setup":"serieInicializa();\n","inc":"","def":"","work":"seriePrintLn(String({0}));\n","loop":""}],
+		
+		["-","Tiempo"],		
+		["R", "cronómetro","getTimerSato", "0",
+		{"encode":"{n0}","setup":"","inc":"","def":"double currentTime = 0;\ndouble lastTime = 0;\n--separator--double getLastTime(){\n\treturn currentTime = millis()/1000.0 - lastTime;\n}\n","work":"getLastTime()","loop":""}],
+		
+		["w", "reiniciar cronómetro","resetTimerSato", "0",
+		{"encode":"{n0}","setup":"","inc":"","def":"double currentTime = 0;\ndouble lastTime = 0;\n","work":"lastTime = millis()/1000.0;\n","loop":""}]
+	],
+	"menus": {
+		"tiempoTonoSato":["Half","Quarter","Eighth","Whole","Double","Zero"],
+		"motorvalueSato":[255,150,100,0,-100,-150,-200,-255],
+		"notasSato":["C2","D2","E2","F2","G2","A2","B2","C3","D3","E3","F3","G3","A3","B3","C4","D4","E4","F4","G4","A4","B4","C5","D5","E5","F5","G5","A5","B5","C6","D6","E6","F6","G6","A6","B6","C7","D7","E7","F7","G7","A7","B7","C8","D8"],
+		"estado":["ENCENDIDO","APAGADO"],
+		"nluces":["TODAS","TRACERA IZQ.","TRACERA DER.","DELANTERA IZQ.","DELANTERA DER."],
+		"rvueltas":["1","2","3","4","5","6","7","8","9","10"],
+		"direccion":["ADELANTE","ATRÁS","IZQUIERDA","DERECHA"],
+		"motorPort":["IZQUIERDO","DERECHO"],
+		"button_state":["PRESIONADO","NO PRESIONADO"],
+		"mmmover":["ADELANTE","ATRÁS"],
+		"gmover":["IZQUIERDA","DERECHA"],
+		"siguelinea":["IZQUIERDO","DERECHO"],
+		"blanconegro":["NEGRO", "BLANCO"],
+		"lbrillo":["20","50","100","150","200"],
+		"ircodeSato":["1","2","3","4","5","6","7","8","9","0","*","↑","↓","←","→","*","OK"],
+		"motorPortSato":["IZQUIERDO","DERECHO"],
+		"gradosservoSato":["0","45","90","135","180"]
+	},
+	"values":{
+		"B0":31,"C1":33,"D1":37,"E1":41,"F1":44,"G1":49,"A1":55,"B1":62,
+			"C2":65,"D2":73,"E2":82,"F2":87,"G2":98,"A2":110,"B2":123,
+			"C3":131,"D3":147,"E3":165,"F3":175,"G3":196,"A3":220,"B3":247,
+			"C4":262,"D4":294,"E4":330,"F4":349,"G4":392,"A4":440,"B4":494,
+			"C5":523,"D5":587,"E5":659,"F5":698,"G5":784,"A5":880,"B5":988,
+			"C6":1047,"D6":1175,"E6":1319,"F6":1397,"G6":1568,"A6":1760,"B6":1976,
+			"C7":2093,"D7":2349,"E7":2637,"F7":2794,"G7":3136,"A7":3520,"B7":3951,
+			"C8":4186,"D8":4699,
+		"Half":500,"Quarter":250,"Eighth":125,"Whole":1000,"Double":2000,"Zero":0,
+		"ENCENDIDO":1,"APAGADO":0,
+		"ADELANTE":1,"ATRÁS":2,"IZQUIERDA":3,"DERECHA":4,
+		"PRESIONADO":1,
+		"NO PRESIONADO":0,
+		"IZQUIERDO":1,
+		"DERECHO":2,
+		"TODAS":0,
+		"NEGRO": 0,
+		"BLANCO": 1,
+		"TRACERA IZQ.":2,
+		"TRACERA DER.":1,
+		"DELANTERA IZQ.":3,
+		"DELANTERA DER.":4
+	},
+	"translators":{
+	}
+}
