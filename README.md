@@ -17,7 +17,7 @@ Sato es un robot basado en arduino con propositos educativos programable a trave
 4. Busque la extensión "Sato" y haga clic en "Nuevo Dispositivo". (Es posible que deba esperar a la actualización de los dispositivos soportados.) En caso de no poseer una conexión a internet, es posible descargar la extensión he instalarla en modo offline. Ese procedimiento se describe más adelante.
 5. Una vez descargada la extensión haga clic sobre la misma y presione aceptar. Puede hacer clic sobre la estrella para configurar a Sato como el dispositivo por defecto.
 
-- [Instalación Online](./wiki/Instalaci%C3%B3n-de-la-extensi%C3%B3n)
+- [Instalación Online](wiki/Instalaci%C3%B3n-de-la-extensi%C3%B3n)
 
 
 ### Instalación Offline🔧
@@ -27,7 +27,7 @@ Sato es un robot basado en arduino con propositos educativos programable a trave
 3. Ejecute mBlock y arrastre el archivo sato.mext sobre el IDE.
 4. mBlock nos avisará que el nuevo dispositivo esta instalado.
 
-- [Instalación Offline](./wiki/Instalación-Offlinen)
+- [Instalación Offline](wiki/Instalación-Offlinen)
 
 ## Comenzando 🚀
 1. Utilice el cable USB para conectar ***Sato*** a la pc.
