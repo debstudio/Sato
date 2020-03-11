@@ -18,7 +18,7 @@ Sato es un robot con propositos educativos. Este proyecto contiene la extención
 3. Ejecute mBlock y arrastre el archivo sato.mext sobre el IDE.
 4. mBlock nos avisará que el nuevo dispositivo esta instalado.
 
-![Offline](https://raw.githubusercontent.com/debstudio/Sato/prueba/doc/img/ofline.png)
+![Offline](https://raw.githubusercontent.com/debstudio/Sato/prueba/doc/img/offline.png)
 
 ```
 Da un ejemplo
