@@ -124,12 +124,6 @@ Ademas se tomaron como base proyectos libres de robotica como mblock y otto.
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
-
-
-
-
+Este proyecto está bajo la Licencia (GNU GPLv3) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
 
 ---
