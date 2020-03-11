@@ -1,6 +1,6 @@
 # Sato
 
-_Sato es un robot con propositos educativos. Este proyecto contiene la extención mBlock junto con sus manuales y ejemplos para realizar su programación.
+Sato es un robot con propositos educativos. Este proyecto contiene la extención mBlock junto con sus manuales y ejemplos para realizar su programación.
 
 ### Instalación 🔧
 1. Descargue el software [mBlock 5](https://www.mblock.cc/en-us/download/) desde su página oficial.
@@ -8,7 +8,29 @@ _Sato es un robot con propositos educativos. Este proyecto contiene la extenció
 3. En la pestaña "Dispositivos" haga clic en "añadir".
 4. Busque la extensión "Sato" y haga clic en "Nuevo Dispositivo". (Es posible que deba esperar a la actualización de los dispositivos soportados.) En caso de no poseer una conexión a internet, es posible descargar la extensión he instalarla en modo offline. Ese procedimiento se describe más adelante.
 5. Una vez descargada la extensión haga clic sobre la misma y presione aceptar. Puede hacer clic sobre la estrella para configurar a Sato como el dispositivo por defecto.
+
 ![Instalación](https://raw.githubusercontent.com/debstudio/Sato/prueba/doc/img/instalacion.png)
+
+### Instalación Offline🔧
+
+1. Descargue el software [mBlock 5](https://www.mblock.cc/en-us/download/) desde su página oficial.
+2. Descargue el archivo sato.mext.
+3. Ejecute mBlock y arrastre el archivo sato.mext sobre el IDE.
+4. mBlock nos avisará que el nuevo dispositivo esta instalado.
+
+![Offline](https://raw.githubusercontent.com/debstudio/Sato/prueba/doc/img/ofline.png)
+
+```
+Da un ejemplo
+```
+
+_Y repite_
+
+```
+hasta finalizar
+```
+
+_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
 
 ## Comenzando 🚀
 
