@@ -20,17 +20,44 @@ Sato es un robot con propositos educativos. Este proyecto contiene la extención
 
 ![Offline](https://raw.githubusercontent.com/debstudio/Sato/prueba/doc/img/offline.png)
 
-```
-Da un ejemplo
+
+### Hardware🔧
+
+Sato esta basado en Arduino Uno y su extención necesita una distribución específica de pines que se definen en el archivo "Sato.h"
+
 ```
 
-_Y repite_
+const int B1A_PWN =10;   //Motor B B-1A
+const int B1B_DIR = 11; //Motor B  B-2A
+const int A1A_PWN = 9; //Motor A A-1A
+const int A1B_DIR = 8;  //Motor A-1B
 
+const int PIN_SERVO = 3; // Pin Servo
+const double MIN_ANGULO=10;
+const double MAX_ANGULO=170;
+const unsigned long MAX_TIEMPO_ATTACHED=1000;
+//Pin Zumbador
+const int PIN_BUZZER=6;
+//Pin Ultrasonido
+const int PIN_ECHO=A3;
+const int PIN_TRIGGER=A2;
+//Pin Sensor de Luz
+const int PIN_LDR=A0;
+//Pin Pulsador
+const int PIN_PULSADOR=A1;
+//PIN LUCES
+const int PIN_LED=5;
+const int CANTIDAD_PIXEL=2;
+//Sigue lineas 
+const int PIN_SIG_IZQ=4;
+const int PIN_SIG_DER=7;
+//DefMotor
+const int pinMotor2[3] = { B1B_DIR, B1A_PWN,0};
+const int pinMotor1[3] = { A1B_DIR,A1A_PWN,1};
+//IR
+const int IR_PIN = 2;
+const long SERIAL_BAUDRATE=115200;
 ```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
 
 ## Comenzando 🚀
 
