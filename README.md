@@ -97,11 +97,11 @@ El repositorio los siguientes directorios:
   -El directorio src contien los archivos fuentes de arduino utilizados en la extensión.
   
 
-## Construido con 🛠️
+## Desarrollado con 🛠️
 
 * [mBlock](https://www.mblock.cc/en-us/) 
 * [Arduino](https://www.arduino.cc/) 
-Ademas se tomaron como base proyectos libres de robotica como mblock y otto.
+
 
 ## Contribuyendo 🖇️
 
@@ -118,7 +118,7 @@ Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](ht
 ## Autores ✒️
 
 
-* **debStudio S.A.**  - [www.debstudio.com.ar](hhttp://www.debstudio.com.ar/)
+**debStudio S.A.**  - [www.debstudio.com.ar](http://www.debstudio.com.ar/)
 
 Ademas se tomaron como base proyectos libres de robotica como mblock y otto.
 
