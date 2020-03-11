@@ -32,7 +32,7 @@ Sato es un robot basado en arduino con propositos educativos programable a trave
 1. Utilice el cable USB para conectar ***Sato*** a la pc.
 2. Haga clic en *Conectar* y aparecerá un listado con los puertos disponibles para la conección, seleccionamos el correcto y hacemos clic nuevamente en *Conectar*. Si el puerto no aparece pruebe con hacer clic en *mostrar todos los dispositivos conectables*.
 
-**IMPORTANTE: DEBIDO A QUE EL DISPOSITIVO BLUETOOTH ESTA CONECTADO A LOS PINES 0 Y 1 DE ARDUINO EL MISMO DEBE PERMANECER APAGADO MIENTRAS SE CONECTA CON MBLOCK**
+> **IMPORTANTE: Debido a que el dispositivo bluetooth se encuentra conectado a los pines 0 y 1 de arduino el mismo debe permanecer apagado mientras se conecta con mBlock.**
 
 Una vez desarrollado el código en mBlock debemos conectar el robot para subir el programa.
 
