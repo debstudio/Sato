@@ -46,13 +46,13 @@ Una vez desarrollado el código en mBlock debemos conectar el robot para subir e
 Sato esta basado en Arduino Uno y su extención necesita una distribución específica de pines que se definen en el archivo "Sato.h"
 
 ```
-
-const int B1A_PWN =10;   //Motor B B-1A
-const int B1B_DIR = 11; //Motor B  B-2A
+//Pin Motores puente H
+const int B1A_PWN =10; //Motor B B-1A
+const int B1B_DIR = 11;//Motor B  B-2A
 const int A1A_PWN = 9; //Motor A A-1A
-const int A1B_DIR = 8;  //Motor A-1B
-
-const int PIN_SERVO = 3; // Pin Servo
+const int A1B_DIR = 8; //Motor A-1B
+// Pin Servo
+const int PIN_SERVO = 3;
 const double MIN_ANGULO=10;
 const double MAX_ANGULO=170;
 const unsigned long MAX_TIEMPO_ATTACHED=1000;
@@ -71,11 +71,13 @@ const int CANTIDAD_PIXEL=2;
 //Sigue lineas 
 const int PIN_SIG_IZQ=4;
 const int PIN_SIG_DER=7;
+//IR
+const int IR_PIN = 2;
+
 //DefMotor
 const int pinMotor2[3] = { B1B_DIR, B1A_PWN,0};
 const int pinMotor1[3] = { A1B_DIR,A1A_PWN,1};
-//IR
-const int IR_PIN = 2;
+
 const long SERIAL_BAUDRATE=115200;
 ```
 
