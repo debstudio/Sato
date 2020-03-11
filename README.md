@@ -8,7 +8,7 @@ _Sato es un robot con propositos educativos. Este proyecto contiene la extenció
 3. En la pestaña "Dispositivos" haga clic en "añadir".
 4. Busque la extensión "Sato" y haga clic en "Nuevo Dispositivo". (Es posible que deba esperar a la actualización de los dispositivos soportados.) En caso de no poseer una conexión a internet, es posible descargar la extensión he instalarla en modo offline. Ese procedimiento se describe más adelante.
 5. Una vez descargada la extensión haga clic sobre la misma y presione aceptar. Puede hacer clic sobre la estrella para configurar a Sato como el dispositivo por defecto.
-[Instalación](https://raw.githubusercontent.com/debstudio/Sato/prueba/doc/img/instalacion.png)
+![Instalación](https://raw.githubusercontent.com/debstudio/Sato/prueba/doc/img/instalacion.png)
 
 ## Comenzando 🚀
 
