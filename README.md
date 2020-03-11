@@ -13,7 +13,7 @@ Esta extención permite instalar bloques especificos de Sato para hacerlo compat
 4. Busque la extensión "Sato" y haga clic en "Nuevo Dispositivo". (Es posible que deba esperar a la actualización de los dispositivos soportados.) En caso de no poseer una conexión a internet, es posible descargar la extensión he instalarla en modo offline. Ese procedimiento se describe más adelante.
 5. Una vez descargada la extensión haga clic sobre la misma y presione aceptar. Puede hacer clic sobre la estrella para configurar a Sato como el dispositivo por defecto.
 
-![Instalación] (https://raw.githubusercontent.com/debstudio/Sato/prueba/doc/img/instalacion.png)
+[Instalación](https://raw.githubusercontent.com/debstudio/Sato/prueba/doc/img/instalacion.png)
 
 ### Instalación Offline🔧
 
@@ -22,7 +22,7 @@ Esta extención permite instalar bloques especificos de Sato para hacerlo compat
 3. Ejecute mBlock y arrastre el archivo sato.mext sobre el IDE.
 4. mBlock nos avisará que el nuevo dispositivo esta instalado.
 
-![Offline] (https://raw.githubusercontent.com/debstudio/Sato/prueba/doc/img/offline.png)
+[Offline](https://raw.githubusercontent.com/debstudio/Sato/prueba/doc/img/offline.png)
 
 ## Comenzando 🚀
 1. Utilice el cable USB para conectar ***Sato*** a la pc.
