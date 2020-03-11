@@ -84,15 +84,15 @@ const long SERIAL_BAUDRATE=115200;
 ## Contenido🚀
 
 El repositorio los siguientes directorios:
-- mblock 3: Contiene el código fuente de la extensión para mBlock 3
+- **mblock 3:** Contiene el código fuente de la extensión para mBlock 3
 
   - Para modificar esta extensión solo se debe comprimir el directorio Sato en un archivo zip y subirlo con el administrador de extenciones de mblock. 
 
   - Para mas información puede consultar la documentación de mBlock [http://download.makeblock.com/mblock/mblock_extension_guide.pdf](http://download.makeblock.com/mblock/mblock_extension_guide.pdf)
 
-- mBlock 5: Contiene el código fuente de la extensión para mBlock 5
+- **mBlock 5:** Contiene el código fuente de la extensión para mBlock 5
 
-  -El archivo sato.mext se corresponde con la exportación del[generador de extensiones de mblock](https://ext.mblock.cc/) para mas información consulte la documentación oficial: https://www.mblock.cc/doc/en/developer-documentation/developer-documentation.html.
+  -El archivo sato.mext se corresponde con la exportación del [generador de extensiones de mblock](https://ext.mblock.cc/) para mas información consulte la documentación oficial: https://www.mblock.cc/doc/en/developer-documentation/developer-documentation.html.
   
   -El directorio src contien los archivos fuentes de arduino utilizados en la extensión.
   
