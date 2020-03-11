@@ -10,13 +10,13 @@ Sato es un robot basado en arduino con propositos educativos programable a trave
 
  Este repositorio contiene las extenciones necesarias para agregar a mBlock bloques específicos de **Sato**.
  
-### Instalación 🔧[Wiki-Instalación Online](https://github.com/debstudio/Sato/wiki/Instalaci%C3%B3n-de-la-extensi%C3%B3n)
+### Instalación 🔧
 1. Descargue el software [mBlock 5](https://www.mblock.cc/en-us/download/) desde su página oficial.
 2. Ejecute la aplicación. (Puede cambiar el idioma en la parte superior izquierda de de la pantalla a español).
 3. En la pestaña "Dispositivos" haga clic en "añadir".
 4. Busque la extensión "Sato" y haga clic en "Nuevo Dispositivo". (Es posible que deba esperar a la actualización de los dispositivos soportados.) En caso de no poseer una conexión a internet, es posible descargar la extensión he instalarla en modo offline. Ese procedimiento se describe más adelante.
 5. Una vez descargada la extensión haga clic sobre la misma y presione aceptar. Puede hacer clic sobre la estrella para configurar a Sato como el dispositivo por defecto.
-
+>[Wiki-Instalación Online](https://github.com/debstudio/Sato/wiki/Instalaci%C3%B3n-de-la-extensi%C3%B3n)
 
 
 ### Instalación Offline🔧
