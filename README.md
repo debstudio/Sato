@@ -28,15 +28,12 @@ Esta extención permite instalar bloques especificos para el Sato, y de esta man
 1. Utilice el cable USB para conectar ***Sato*** a la pc.
 2. Haga clic en *Conectar* y aparecerá un listado con los puertos disponibles para la conección, seleccionamos el correcto y hacemos clic nuevamente en *Conectar*. Si el puerto no aparece pruebe con hacer clic en *mostrar todos los dispositivos conectables*.
 
-**IMPORTANTE: DEBIDO A QUE EL DISPOSITIVO BLUETOOTH ESTA CONECTADO A LOS PINES 0 Y 1 DE ARDUINO EL MISMO DEBE PERMANECER APAGADO MIENTRAS SE CONECTA CON MBLOCK***
+**IMPORTANTE: DEBIDO A QUE EL DISPOSITIVO BLUETOOTH ESTA CONECTADO A LOS PINES 0 Y 1 DE ARDUINO EL MISMO DEBE PERMANECER APAGADO MIENTRAS SE CONECTA CON MBLOCK**
 
 Una vez desarrollado el código en mBlock debemos conectar el robot para subir el programa.
 
 3. Haga clic en subir. mBlock cargará el programa en el dispositivo y mostrará un mensaje de finalización.
 4. Ya puede desconectar a ***Sato**.
-
-
-
 
 
 ### Hardware🔧
