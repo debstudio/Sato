@@ -1,12 +1,15 @@
 # Sato
 
-_Sato es un robot con propositos educativos, este repositorio contiene la extencion especifica para promarlo con mBlock_
+_Sato es un robot con propositos educativos. Este proyecto contiene la extención mBlock junto con sus manuales y ejemplos para realizar su programación.
+
+### Instalación 🔧
+1. Descarge [mBlock 5] (https://www.mblock.cc/en-us/download/) desde su página oficial.
+2. Ejecute la aplicación y agregue un nuevo dispositivo.
+
 
 ## Comenzando 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
-Mira **Deployment** para conocer como desplegar el proyecto.
+_El software de Sato
 
 
 ### Pre-requisitos 📋
