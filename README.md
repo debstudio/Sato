@@ -3,18 +3,17 @@
 _Sato es un robot con propositos educativos. Este proyecto contiene la extención mBlock junto con sus manuales y ejemplos para realizar su programación.
 
 ### Instalación 🔧
-1. Descarge [mBlock 5] (https://www.mblock.cc/en-us/download/) desde su página oficial.
-2. Ejecute la aplicación y agregue un nuevo dispositivo.
+1. Descargue el software [mBlock 5](https://www.mblock.cc/en-us/download/) desde su página oficial.
+2. Ejecute la aplicación. (Puede cambiar el idioma en la parte superior izquierda de de la pantalla a español).
+3. En la pestaña "Dispositivos" haga clic en "añadir".
+4. Busque la extensión "Sato" y haga clic en "Nuevo Dispositivo". (Es posible que deba esperar a la actualización de los dispositivos soportados.) En caso de no poseer una conexión a internet, es posible descargar la extensión he instalarla en modo offline. Ese procedimiento se describe más adelante.
+5. Una vez descargada la extensión haga clic sobre la misma y presione aceptar. Puede hacer clic sobre la estrella para configurar a Sato como el dispositivo por defecto.
 
 
 ## Comenzando 🚀
 
 _El software de Sato
 
-
-### Pre-requisitos 📋
-
-_Que cosas necesitas para instalar el software y como instalarlas_
 
 ```
 Da un ejemplo
