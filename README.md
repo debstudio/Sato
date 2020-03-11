@@ -81,9 +81,16 @@ const int pinMotor1[3] = { A1B_DIR,A1A_PWN,1};
 const long SERIAL_BAUDRATE=115200;
 ```
 
-## Comenzando 🚀
+## Contenido🚀
 
-_El software de Sato
+El repositorio los siguientes directorios
+- mblock 3: Contiene el código fuente de la extensión para mBlock 3.0.
+
+  - Para modificar esta extensión solo se debe comprimir el directorio Sato en un archivo zip y subirlo con el administrador de extenciones de mblock. 
+
+  - Para mas información puede consultar la documentación de mBlock [http://download.makeblock.com/mblock/mblock_extension_guide.pdf](http://download.makeblock.com/mblock/mblock_extension_guide.pdf)
+
+-mBlock 5
 
 
 ```
