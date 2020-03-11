@@ -1,10 +1,10 @@
 # Sato extención mBlock
 
-Sato es un robot con propositos educativos programable a travez de mBlock.
+Sato es un robot basado en arduino con propositos educativos programable a travez de mBlock.
 
-mBlock  es un entorno gráfico de programación basado en el editor Scratch 2.0 para que escuelas y centros de formación pueda introducir la robótica de forma sencilla y enseñar a programar robots basados en Arduino.
+[mBlock](https://www.mblock.cc/)  es un entorno gráfico de programación basado en el editor Scratch 2.0 para que escuelas y centros de formación pueda introducir la robótica de forma sencilla y enseñar a programar robots basados en Arduino.
 
-Esta extención permite instalar bloques especificos Sato, y de esta manera hacerlo compatible con mBlock,
+Esta extención permite instalar bloques especificos de Sato para hacerlo compatible con mBlock
 
 ### Instalación 🔧
 1. Descargue el software [mBlock 5](https://www.mblock.cc/en-us/download/) desde su página oficial.
@@ -13,7 +13,7 @@ Esta extención permite instalar bloques especificos Sato, y de esta manera hace
 4. Busque la extensión "Sato" y haga clic en "Nuevo Dispositivo". (Es posible que deba esperar a la actualización de los dispositivos soportados.) En caso de no poseer una conexión a internet, es posible descargar la extensión he instalarla en modo offline. Ese procedimiento se describe más adelante.
 5. Una vez descargada la extensión haga clic sobre la misma y presione aceptar. Puede hacer clic sobre la estrella para configurar a Sato como el dispositivo por defecto.
 
-![Instalación](https://raw.githubusercontent.com/debstudio/Sato/prueba/doc/img/instalacion.png)
+![Instalación] (https://raw.githubusercontent.com/debstudio/Sato/prueba/doc/img/instalacion.png)
 
 ### Instalación Offline🔧
 
@@ -22,7 +22,7 @@ Esta extención permite instalar bloques especificos Sato, y de esta manera hace
 3. Ejecute mBlock y arrastre el archivo sato.mext sobre el IDE.
 4. mBlock nos avisará que el nuevo dispositivo esta instalado.
 
-![Offline](https://raw.githubusercontent.com/debstudio/Sato/prueba/doc/img/offline.png)
+![Offline] (https://raw.githubusercontent.com/debstudio/Sato/prueba/doc/img/offline.png)
 
 ## Comenzando 🚀
 1. Utilice el cable USB para conectar ***Sato*** a la pc.
@@ -33,7 +33,7 @@ Esta extención permite instalar bloques especificos Sato, y de esta manera hace
 Una vez desarrollado el código en mBlock debemos conectar el robot para subir el programa.
 
 3. Haga clic en subir. mBlock cargará el programa en el dispositivo y mostrará un mensaje de finalización.
-4. Ya puede desconectar a ***Sato**.
+4. Ya puede desconectar a **Sato**.
 
 
 ### Hardware🔧
