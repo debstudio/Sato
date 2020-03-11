@@ -86,7 +86,7 @@ const long SERIAL_BAUDRATE=115200;
 El repositorio los siguientes directorios:
 - **mblock 3:** Contiene el código fuente de la extensión para mBlock 3
 
-  - Para modificar esta extensión solo se debe comprimir el directorio Sato en un archivo zip y subirlo con el administrador de extenciones de mblock. 
+  - Para utilizar esta extensión solo se debe comprimir el directorio Sato en un archivo zip y subirlo con el administrador de extenciones de mBlock 3.0. 
 
   - Para mas información puede consultar la documentación de mBlock [http://download.makeblock.com/mblock/mblock_extension_guide.pdf](http://download.makeblock.com/mblock/mblock_extension_guide.pdf)
 
@@ -97,81 +97,30 @@ El repositorio los siguientes directorios:
   -El directorio src contien los archivos fuentes de arduino utilizados en la extensión.
   
 
-
-```
-Da un ejemplo
-```
-
-### Instalación 🔧
-
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_Dí cómo será ese paso_
-
-```
-Da un ejemplo
-```
-
-_Y repite_
-
-```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
-
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+* [mBlock](https://www.mblock.cc/en-us/) 
+* [Arduino](https://www.arduino.cc/) 
+Ademas se tomaron como base proyectos libres de robotica como mblock y otto.
 
 ## Contribuyendo 🖇️
 
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
+Cosas con las que contribuir al proyecto
+- Ejercicios de Ejemplo
+- Documentación
+- Nuevos Bloques para Nuevos Sensores
 
 ## Wiki 📖
 
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
+Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/debstudio/Sato/wiki)
 
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+* **debStudio S.A.**  - [www.debstudio.com.ar](hhttp://www.debstudio.com.ar/)
 
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
+Ademas se tomaron como base proyectos libres de robotica como mblock y otto.
 
 ## Licencia 📄
 
