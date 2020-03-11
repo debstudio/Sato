@@ -1,6 +1,6 @@
 # Sato
 
-_Acá va un párrafo que describa lo que es el proyecto_
+_Sato es un robot con propositos educativos, este repositorio contiene la extencion especifica para promarlo con mBlock_
 
 ## Comenzando 🚀
 
