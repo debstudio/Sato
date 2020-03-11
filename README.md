@@ -23,7 +23,7 @@ Sato es un robot basado en arduino con propositos educativos programable a trave
 ### Instalación Offline🔧
 
 1. Descargue el software [mBlock 5](https://www.mblock.cc/en-us/download/) desde su página oficial.
-2. Descargue el archivo sato.mext.
+2. Descargue el archivo  [sato.mext](https://github.com/debstudio/Sato/raw/master/mblock%205/sato.mext).
 3. Ejecute mBlock y arrastre el archivo sato.mext sobre el IDE.
 4. mBlock nos avisará que el nuevo dispositivo esta instalado.
 
