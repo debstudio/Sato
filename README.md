@@ -92,9 +92,9 @@ El repositorio los siguientes directorios:
 
 - **mBlock 5:** Contiene el código fuente de la extensión para mBlock 5
 
-  -El archivo [sato.mext] https://github.com/debstudio/Sato/raw/master/mblock%205/sato.mext se corresponde con la exportación del [generador de extensiones de mblock](https://ext.mblock.cc/) para mas información consulte la documentación oficial: https://www.mblock.cc/doc/en/developer-documentation/developer-documentation.html.
+  - El archivo [sato.mext] https://github.com/debstudio/Sato/raw/master/mblock%205/sato.mext se corresponde con la exportación del [generador de extensiones de mblock](https://ext.mblock.cc/) para mas información consulte la documentación oficial: https://www.mblock.cc/doc/en/developer-documentation/developer-documentation.html.
   
-  -El directorio src contien los archivos fuentes de arduino utilizados en la extensión.
+  - El directorio src contien los archivos fuentes de arduino utilizados en la extensión.
   
 
 ## Desarrollado con 🛠️
