@@ -42,7 +42,7 @@ Una vez desarrollado el código en mBlock debemos conectar el robot para subir e
 4. Ya puede desconectar a **Sato**.
 
 
-## Contenido:open_book:
+## Contenido:books:
 
 El repositorio los siguientes directorios:
 - **mblock 3:** Contiene el código fuente de la extensión para mBlock 3
