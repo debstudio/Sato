@@ -15,8 +15,7 @@ Este repositorio contiene los archivos necesarios para agregar a Sato como un di
 1. Descargue el software [mBlock 5](https://www.mblock.cc/en-us/download/) desde su página oficial.
 2. Ejecute la aplicación. Cambie el idioma en la parte superior izquierda de la pantalla a español.
 3. En la pestaña "Dispositivos" haga clic en "añadir".
-4. Busque la extensión "Sato" y haga clic en "Nuevo Dispositivo".
->>Es posible que deba esperar a la actualización de los dispositivos soportados.
+4. Busque la extensión "Sato" y haga clic en "Nuevo Dispositivo". Dependiendo la velocidad de su conexión es posible que deba esperar que mBlock descargue la lista completa de los dispositivos soportados.
 5. Una vez descargada la extensión haga clic sobre la misma y presione aceptar. Puede hacer clic sobre la estrella para configurar a Sato como el dispositivo por defecto.
 
 - [Instalación Online](https://github.com/debstudio/Sato/wiki/Instalaci%C3%B3n-Online)
@@ -31,7 +30,7 @@ Este repositorio contiene los archivos necesarios para agregar a Sato como un di
 
 - [Instalación Offline](https://github.com/debstudio/Sato/wiki/Instalaci%C3%B3n-Offline)
 
-## Comenzando 🚀
+## Conectar Sato a mBlock:electric_plug:
 1. Utilice el cable USB para conectar ***Sato*** a la pc.
 2. Haga clic en *Conectar* y aparecerá un listado con los puertos disponibles para la conección, seleccionamos el correcto y hacemos clic nuevamente en *Conectar*. Si el puerto no aparece pruebe con hacer clic en *mostrar todos los dispositivos conectables*.
 
