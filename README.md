@@ -11,9 +11,9 @@
 
 Este repositorio contiene los archivos necesarios para agregar a Sato como un dispositivo de mBlock con funciones específicas para la configuración del robot.
  
-### Instalación 🔧
+### Instalación :computer:
 1. Descargue el software [mBlock 5](https://www.mblock.cc/en-us/download/) desde su página oficial.
-2. Ejecute la aplicación. (Puede cambiar el idioma en la parte superior izquierda de de la pantalla a español).
+2. Ejecute la aplicación. Cambie el idioma en la parte superior izquierda de la pantalla a español.
 3. En la pestaña "Dispositivos" haga clic en "añadir".
 4. Busque la extensión "Sato" y haga clic en "Nuevo Dispositivo". (Es posible que deba esperar a la actualización de los dispositivos soportados.) En caso de no poseer una conexión a internet, es posible descargar la extensión he instalarla en modo offline. Ese procedimiento se describe más adelante.
 5. Una vez descargada la extensión haga clic sobre la misma y presione aceptar. Puede hacer clic sobre la estrella para configurar a Sato como el dispositivo por defecto.
