@@ -42,6 +42,22 @@ Una vez desarrollado el código en mBlock debemos conectar el robot para subir e
 4. Ya puede desconectar a **Sato**.
 
 
+## Contenido🚀
+
+El repositorio los siguientes directorios:
+- **mblock 3:** Contiene el código fuente de la extensión para mBlock 3
+
+  - Para utilizar esta extensión solo se debe comprimir el directorio Sato en un archivo zip y subirlo con el administrador de extensiones de mBlock 3 
+
+  - Para más información puede consultar la documentación de mBlock [http://download.makeblock.com/mblock/mblock_extension_guide.pdf](http://download.makeblock.com/mblock/mblock_extension_guide.pdf)
+
+- **mBlock 5:** Contiene el código fuente de la extensión para mBlock 5
+
+  - El archivo [sato.mext](https://github.com/debstudio/Sato/raw/master/mblock%205/sato.mext) se corresponde con la exportación del [generador de extensiones de mblock](https://ext.mblock.cc/) para más información consulte la documentación oficial: https://www.mblock.cc/doc/en/developer-documentation/developer-documentation.html.
+  
+  - El directorio src contiene los archivos fuentes de Arduino utilizados en la extensión.
+
+
 ### Hardware🔧
 
 Sato esta basado en Arduino Uno y su extención necesita una distribución específica de pines que se definen en el archivo "Sato.h"
@@ -81,22 +97,6 @@ const int pinMotor1[3] = { A1B_DIR,A1A_PWN,1};
 
 const long SERIAL_BAUDRATE=115200;
 ```
-
-## Contenido🚀
-
-El repositorio los siguientes directorios:
-- **mblock 3:** Contiene el código fuente de la extensión para mBlock 3
-
-  - Para utilizar esta extensión solo se debe comprimir el directorio Sato en un archivo zip y subirlo con el administrador de extenciones de mBlock 3.0. 
-
-  - Para mas información puede consultar la documentación de mBlock [http://download.makeblock.com/mblock/mblock_extension_guide.pdf](http://download.makeblock.com/mblock/mblock_extension_guide.pdf)
-
-- **mBlock 5:** Contiene el código fuente de la extensión para mBlock 5
-
-  - El archivo [sato.mext](https://github.com/debstudio/Sato/raw/master/mblock%205/sato.mext) se corresponde con la exportación del [generador de extensiones de mblock](https://ext.mblock.cc/) para mas información consulte la documentación oficial: https://www.mblock.cc/doc/en/developer-documentation/developer-documentation.html.
-  
-  - El directorio src contien los archivos fuentes de arduino utilizados en la extensión.
-  
 
 ## Desarrollado con 🛠️
 
