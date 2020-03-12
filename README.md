@@ -21,12 +21,12 @@ Este repositorio contiene los archivos necesarios para agregar a Sato como un di
 - [Instalación Online](https://github.com/debstudio/Sato/wiki/Instalaci%C3%B3n-Online)
 
 
-### Instalación Offline🔧
+### Instalación Offline:dvd:
 
 1. Descargue el software [mBlock 5](https://www.mblock.cc/en-us/download/) desde su página oficial.
 2. Descargue el archivo  [sato.mext](https://github.com/debstudio/Sato/raw/master/mblock%205/sato.mext).
 3. Ejecute mBlock y arrastre el archivo sato.mext sobre el IDE.
-4. mBlock nos avisará que el nuevo dispositivo esta instalado.
+4. mBlock nos avisará que el nuevo dispositivo está instalado.
 
 - [Instalación Offline](https://github.com/debstudio/Sato/wiki/Instalaci%C3%B3n-Offline)
 
