@@ -1,15 +1,15 @@
 # Sato extensión mBlock
 ### Sato 
 
-[Sato](https://raw.githubusercontent.com/debstudio/Sato/master/doc/img/Sato1.png) es un robot basado en Arduino, con propósito educativo, programable a través de mBlock. 
+[Sato](https://github.com/debstudio/Sato/wiki) es un robot basado en Arduino, con propósito educativo, programable a través de mBlock. 
 
 ### mBlock
 
-**[mBlock](https://www.mblock.cc/)**  es un entorno gráfico de programación basado en el editor Scratch 2.0 para que escuelas y centros de formación pueda introducir la robótica de forma sencilla y enseñar a programar robots basados en Arduino.
+[mBlock](https://www.mblock.cc/)  es un entorno gráfico de programación basado en el editor Scratch 2.0 para que escuelas y centros de formación pueda introducir la robótica de forma sencilla y enseñar a programar robots basados en Arduino.
 
 ### Sato y mBlock
 
-Este repositorio contiene los archivos necesarios para agregar a Sato como un dispositivo de mBlock. De esta se harán disponible bloques específicos del robot en el entorno de programación.
+Este repositorio contiene los archivos necesarios para agregar a Sato como un dispositivo de mBlock con funciones específicas para la configuración del robot.
  
 ### Instalación 🔧
 1. Descargue el software [mBlock 5](https://www.mblock.cc/en-us/download/) desde su página oficial.
