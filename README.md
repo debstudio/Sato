@@ -24,7 +24,7 @@ Este repositorio contiene los archivos necesarios para agregar a Sato como un di
 ### Instalación Offline:dvd:
 
 1. Descargue el software [mBlock 5](https://www.mblock.cc/en-us/download/) desde su página oficial.
-2. Descargue el archivo  [sato.mext](https://github.com/debstudio/Sato/raw/master/mblock%205/sato.mext).
+2. Descargue el archivo [sato.mext](https://github.com/debstudio/Sato/raw/master/mblock%205/sato.mext).
 3. Ejecute mBlock y arrastre el archivo sato.mext sobre el IDE.
 4. mBlock nos avisará que el nuevo dispositivo está instalado.
 
@@ -60,7 +60,7 @@ El repositorio los siguientes directorios:
 
 ### Hardware🔧
 
-Sato esta basado en Arduino Uno y su extención necesita una distribución específica de pines que se definen en el archivo "Sato.h"
+Sato está basado en Arduino Uno y su extensión necesita una distribución específica de pines que se definen en el archivo "Sato.h".
 
 ```
 //Pin Motores puente H
@@ -97,7 +97,13 @@ const int pinMotor1[3] = { A1B_DIR,A1A_PWN,1};
 
 const long SERIAL_BAUDRATE=115200;
 ```
+### Dispositivo Bluetooth🔧
 
+El dispositivo bluetooth se encuentra conectado a los pines 0 (Serial In RX) y 1 (Serial Out TX) de Arduino.
+Por lo tanto:
+ -Para conectar y subir programas desde mBlock se debe apagar el dispositivo bluetooth.
+ -Los bloques E/S del puerto serie y bluetooth son compartidos. Si estamos conectados al bluetooth de **Sato**, el bloque "escribir en el puerto serie" enviara los datos al bluetooth.
+ 
 ## Desarrollado con 🛠️
 
 * [mBlock](https://www.mblock.cc/en-us/) 
@@ -106,7 +112,7 @@ const long SERIAL_BAUDRATE=115200;
 
 ## Contribuyendo 🖇️
 
-Cosas con las que contribuir al proyecto
+Cosas con las que contribuir al proyecto:
 - Ejercicios de Ejemplo
 - Documentación
 - Nuevos Bloques para Nuevos Sensores
@@ -121,7 +127,7 @@ Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](ht
 
 **debStudio S.A.**  - [www.debstudio.com.ar](http://www.debstudio.com.ar/)
 
-Ademas se tomaron como base proyectos libres de robotica como mblock y otto.
+Se tomaron como base proyectos libres de robótica como mBot y Otto.
 
 ## Licencia 📄
 
