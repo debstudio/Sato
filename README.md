@@ -101,8 +101,10 @@ const long SERIAL_BAUDRATE=115200;
 
 El dispositivo bluetooth se encuentra conectado a los pines 0 (Serial In RX) y 1 (Serial Out TX) de Arduino.
 Por lo tanto:
- -Para conectar y subir programas desde mBlock se debe apagar el dispositivo bluetooth.
- -Los bloques E/S del puerto serie y bluetooth son compartidos. Si estamos conectados al bluetooth de **Sato**, el bloque "escribir en el puerto serie" enviara los datos al bluetooth.
+
+- Para conectar y subir programas desde mBlock se debe apagar el dispositivo bluetooth.
+ 
+- Los bloques E/S del puerto serie y bluetooth son compartidos. Si estamos conectados al bluetooth de **Sato**, el bloque "escribir en el puerto serie" enviara los datos al bluetooth.
  
 ## Desarrollado con 🛠️
 
