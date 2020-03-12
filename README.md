@@ -31,10 +31,10 @@ Este repositorio contiene los archivos necesarios para agregar a Sato como un di
 - [Instalación Offline](https://github.com/debstudio/Sato/wiki/Instalaci%C3%B3n-Offline)
 
 ## Conectar Sato a mBlock:electric_plug:
-1. Utilice el cable USB para conectar ***Sato*** a la pc.
-2. Haga clic en *Conectar* y aparecerá un listado con los puertos disponibles para la conección, seleccionamos el correcto y hacemos clic nuevamente en *Conectar*. Si el puerto no aparece pruebe con hacer clic en *mostrar todos los dispositivos conectables*.
+1. Utilice el cable USB para conectar ***Sato*** al pc.
+2. Haga clic en "Conectar" y aparecerá un listado con los puertos disponibles para la conexión, seleccionamos el correcto y hacemos clic nuevamente en "Conectar". Si el puerto no aparece pruebe con hacer clic en "mostrar todos los dispositivos conectables".
 
-> **IMPORTANTE: Debido a que el dispositivo bluetooth se encuentra conectado a los pines 0 y 1 de arduino el mismo debe permanecer apagado mientras se conecta con mBlock.**
+> **IMPORTANTE: Debido a que el dispositivo bluetooth se encuentra conectado a los pines 0 y 1 de Arduino el mismo debe permanecer apagado mientras se conecta con mBlock.**
 
 Una vez desarrollado el código en mBlock debemos conectar el robot para subir el programa.
 
