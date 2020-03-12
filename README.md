@@ -104,7 +104,7 @@ Por lo tanto:
 
 - Para conectar y subir programas desde mBlock se debe apagar el dispositivo bluetooth.
  
-- Los bloques E/S del puerto serie y bluetooth son compartidos. Si estamos conectados al bluetooth de **Sato**, el bloque "escribir en el puerto serie" enviara los datos al bluetooth.
+- Los bloques E/S del puerto serie y bluetooth son compartidos. Si se conecta al bluetooth de **Sato**, el bloque "escribir en el puerto serie" enviara los datos al bluetooth.
  
 ## Desarrollado con 🛠️
 
@@ -133,6 +133,6 @@ Se tomaron como base proyectos libres de robótica como mBot y Otto.
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (GNU GPLv3) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Este proyecto está bajo la Licencia (GNU GPLv3) puede ver el archivo [LICENSE.md](LICENSE.md) para detalles
 
 ---
