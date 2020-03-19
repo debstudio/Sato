@@ -85,13 +85,13 @@ void atras(const int pinMotor[3], int speed){
 }  
 
 void run(const int pinMotor[3], int speed){
-	 if (speed > 250)
+	 if (speed > VELOCIDAD_MAX)
 	 {
 		 speed=250;
 	 }
-	 if (speed < -250)
+	 if (speed < -1*VELOCIDAD_MAX)
 	 {
-		 speed= -250;
+		 speed= -1*VELOCIDAD_MAX;
 	 }
      if (speed >= 0){
 		adelante(pinMotor,speed);
@@ -100,6 +100,30 @@ void run(const int pinMotor[3], int speed){
 		atras(pinMotor,-1*speed);
 	}
 }
+int potenciaAVelocidad(double potencia)
+{
+	int speed;
+	if(potencia<=0)
+	{
+		speed=0;
+	}
+	else
+	{
+		speed=VELOCIDAD_MIN+(VELOCIDAD_MAX-VELOCIDAD_MIN) * potencia/100.0;
+	}
+	return speed;
+}
+void muevePotencia(int direccion, double potencia)
+{
+	int speed;
+	speed=potenciaAVelocidad(potencia);
+	move(direccion,speed);
+}
+void para()
+{
+	move(1,0);
+}
+
 void move(int direction, int speed){
 
      int leftSpeed = 0;
@@ -126,6 +150,15 @@ void move(int direction, int speed){
 }
 void establecerVelocidad(const int pinMotor[3],int speed){
 
+	run(pinMotor,speed);
+}
+void establecerVelocidadPotencia(const int pinMotor[3],int potencia,int direccion){
+	int speed;
+	speed=potenciaAVelocidad(potencia);
+	if(direccion=2)
+	{
+		speed=-1*speed;
+	}
 	run(pinMotor,speed);
 }
 void iniMotor(){
@@ -164,8 +197,14 @@ void servoLoop() //Libera servo para ahorro de energía
 	}
 
 }
-void establecerLuz(int nluz,int rojo,int verde,int azul,int brillo){
+void iniLuz()
+{
 	pinMode(PIN_LED,OUTPUT);
+    establecerLuz(0,0,0,0,0);
+}
+
+void establecerLuz(int nluz,int rojo,int verde,int azul,int brillo){
+	
 	pixels.setBrightness(brillo);
 	if (nluz==0)
 	{
@@ -230,10 +269,10 @@ void iniIR()
 }
 String irBotonPresionado()
 {
-  String keyPress="";
+  String keyPress="N";
   if(!isLeidoIR)
   {
-	 // delay(50);
+	  // delay(100);
 	  unsigned long data = irrecv.read();
 	  if (data != 0){
 
@@ -251,7 +290,7 @@ String irBotonPresionado()
 			  keyPress= "3";
 			  break;
 			  case 0xFF22DD:
-				  keyPress="4";
+			  keyPress="4";
 			  break;
 			  case 0xFF02FD:
 			  keyPress= "5";
@@ -321,10 +360,14 @@ float obtieneDistancia(int trig,int echo){
     pinMode(echo, INPUT);
     return pulseIn(echo,HIGH,30000)/58.0;
 }
+void suena(int frecuencia,int duracion)
+{
+	TimerFreeTone(PIN_BUZZER,frecuencia,duracion);
+}
 void tocarNota(int nota,int duracion)
 {
 	TimerFreeTone(PIN_BUZZER,nota,duracion);
-	delay(50);
+	delay(20);
 }
 void tocarNotaConSilencio(int nota,int duracion,int silencio)
 {

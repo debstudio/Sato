@@ -1,6 +1,6 @@
 {	"extensionName": "Sato",
 	"description": "Robot Sato",
-	"version": "1.2",
+	"version": "1.5",
 	"sort":0,
 	"author": "DebStudio",
 	"homepage": "https://github.com/debstudio/Sato",
@@ -19,7 +19,7 @@
 		{"encode":"{d0}{s1}","setup":"iniServo();\n","inc":"","def":"","work":"posicionaServo({0});\n","loop":"servoLoop();\n"}],
 		["-"],
 		["w", "luz %d.nluces rojo %d.lrojo verde %d.lverde azul %d.lazul brillo %d.lbrillo","luzSato","TODAS",0,0,0,100,
-		{"encode":"{d0}","setup":"establecerLuz(0,0,0,0,0);\n","inc":"","def":"","work":"establecerLuz({0},{1},{2},{3},{4});\n","loop":""}],
+		{"encode":"{d0}{s1}","setup":"iniLuz();\n","inc":"","def":"","work":"establecerLuz({0},{1},{2},{3},{4});\n","loop":""}],
 
 		["w", "tocar tono nota %d.notasSato tiempo %d.tiempoTonoSato","runToneSato","C4","Half",
 		{"encode":"{s1}{s2}","setup":"pinMode(PIN_BUZZER,OUTPUT);\n","inc":"","def":"","work":"tocarNota({0},{1});\n","loop":""}],
@@ -130,7 +130,7 @@
 		"siguelinea":["IZQUIERDO","DERECHO"],
 		"blanconegro":["NEGRO", "BLANCO"],
 		"lbrillo":["20","50","100","150","200"],
-		"ircodeSato":["1","2","3","4","5","6","7","8","9","0","*","↑","↓","←","→","*","OK"],
+		"ircodeSato":["1","2","3","4","5","6","7","8","9","0","*","↑","↓","←","→","*","OK","NINGUNA"],
 		"motorPortSato":["IZQUIERDO","DERECHO"],
 		"gradosservoSato":["0","45","90","135","180"]
 	},
@@ -156,7 +156,8 @@
 		"TRACERA IZQ.":2,
 		"TRACERA DER.":1,
 		"DELANTERA IZQ.":3,
-		"DELANTERA DER.":4
+		"DELANTERA DER.":4,
+		"NINGUNA":"N"
 	},
 	"translators":{
 	}
