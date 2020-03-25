@@ -127,7 +127,7 @@ Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](ht
 ## Autores ✒️
 
 
-**debStudio S.A.**  - [www.debstudio.com.ar](http://www.debstudio.com.ar/)
+**debStudio S.A.**  - [www.debstudio.com.ar](http://www.debstudio.com.ar/) robotica@debstudio.com.ar
 
 Se tomaron como base proyectos libres de robótica como mBot y Otto.
 
