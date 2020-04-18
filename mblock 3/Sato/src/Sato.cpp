@@ -155,7 +155,7 @@ void establecerVelocidad(const int pinMotor[3],int speed){
 void establecerVelocidadPotencia(const int pinMotor[3],int potencia,int direccion){
 	int speed;
 	speed=potenciaAVelocidad(potencia);
-	if(direccion=2)
+	if(direccion==2)
 	{
 		speed=-1*speed;
 	}
